@@ -20,3 +20,5 @@ let tokens = Grammar::parse(json_grammar).expect("valid json grammar")
              .tokenize("{\"@\" : 2, \"#\": [true, [4, 3]]  }");
 ```
 creates a parser able to recognize the JSON language, and such parser can construct a syntactic tree of the rules that match the input using the method ```tokenize```. This tree is formed by nodes that keep track of the input matched and all sub rules matched.
+
+To see some examples of grammars checkout the tests in https://github.com/bednabedna/GrammarRs/blob/main/src/grammar.rs.
